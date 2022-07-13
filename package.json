@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "node": "^18.5.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "api-restfull-films",
+  "version": "1.0.0",
+  "description": "API para listagem de filmes",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "API_Rest_Films"
+  },
+  "author": "Rafael Gioffi",
+  "license": "ISC",
+  "engines": {
+    "node": "^16.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
