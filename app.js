@@ -4,6 +4,7 @@ const morgan = require('morgan');   //monitora todos os pedidos
 const bodyParser = require('body-parser');
 
 const movieRoute = require('./routes/movies');
+const usersRoute = require('./routes/users');
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,6 +25,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/movies', movieRoute);
+app.use('/users', usersRoute);
 
 // quando não encontra a rota...
 app.use((req, res, next) => {
